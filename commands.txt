@@ -1,0 +1,8 @@
+for create :- npm create vite@latest
+packages - y
+project name - (any thing)
+select a framework - React
+select variant -javascript
+ cd my-react-app
+  npm install
+  npm run dev
