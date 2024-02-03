@@ -15,7 +15,7 @@ function button(){
     }
 
     return( 
-    //<button className={styles.button} >click Me</button>  
+    //<button className={styles.button} >click Me</button>  //modules css
     <button style={styles} >click Me</button>  //inline css 
      )
         
