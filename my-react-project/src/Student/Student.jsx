@@ -14,6 +14,12 @@ function student(props){
     
 
 }
+student.defaultProps={
+        name: "Guest",
+        age: 0,
+        isStudent: false,
+}
+
 student.protoType ={
         name: propsTypes.string,
         age : propsTypes.number,
