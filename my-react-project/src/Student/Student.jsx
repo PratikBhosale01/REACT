@@ -1,3 +1,5 @@
+import propsTypes from 'prop-types';
+
 function student(props){
 
     return(
@@ -9,6 +11,13 @@ function student(props){
         </div>
     );
 
+    
+
 }
+student.protoType ={
+        name: propsTypes.string,
+        age : propsTypes.number,
+        isStudent: propsTypes.boolean,
+    }
 
  export default student
