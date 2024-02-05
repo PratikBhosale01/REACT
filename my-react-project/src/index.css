@@ -80,3 +80,15 @@ h1 {
   color: hsl(0, 0%, 30%);
 
 }
+.log-Prom{
+  background-color: rgb(207, 116, 116);
+  border-radius:5px ;
+
+}
+
+.Greet-msg{
+  background-color: rgb(133, 207, 116);
+  border-radius:5px ;
+  
+}
+
