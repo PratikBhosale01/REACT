@@ -8,13 +8,19 @@ import UserGreet from './UserGreet.jsx'
 import List from './List.jsx'
 
 function App() {
+
+
+  const fruit = [{ id:1,name :"apple",cal:12}, 
+  {id:2,name:"orange", cal:18}, 
+  {id:3, name:"cherry", cal:14}, 
+ {id:4, name:"mango" ,cal:15}];
  
   return(
     <>
     
     <AppHeader/>
     <UserGreet isLoggedIn={true} username="Xplorer" />
-    <List/>
+    <List list={fruit} category="fruit"/>
     <AppFood/>
     <Student name="stud"  age={30}  isStudent={true}/>
     <Student/>
