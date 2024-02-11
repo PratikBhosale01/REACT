@@ -1,3 +1,4 @@
+import propsTypes from 'prop-types';
 
 function List(props){
     
@@ -33,6 +34,18 @@ function List(props){
       <ol>{highCalItems}</ol> */}
       </>
     );
+}
+
+List.defaultProps={
+  category:"Category",
+  list:[],
+}
+
+List.prototype={
+  category: propsTypes.string,
+  list:propsTypes.arrayOf(propsTypes.shape({id:propsTypes.number,
+                                            name:propsTypes.string,
+                                            cal:propsTypes.number,  })),
 }
 
 export default List

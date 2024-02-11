@@ -24,13 +24,22 @@ const newFruit = [
  
   return(
     <>
-    
-    <AppHeader/>
-    <UserGreet isLoggedIn={true} username="Xplorer" />
-   { fruit.length>0? <List list={fruit} category="fruit"/>:null}  
+   <AppHeader/>
+  <UserGreet isLoggedIn={true} username="Xplorer" />
+
+
+   { fruit.length>0? <List list={fruit} category="fruit"/>:null} 
    {/* if there is no fruit in the list dont render anything */}
+
+
    { newFruit.length>0 && <List list={fruit} category=" new fruit"/> }  
    {/* this is know as short circuiting*/}
+
+
+    <List />
+    {/* to check default props */}
+
+
     <AppFood/>
     <Student name="stud"  age={30}  isStudent={true}/>
     <Student/>
