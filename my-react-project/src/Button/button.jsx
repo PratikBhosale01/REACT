@@ -16,8 +16,21 @@ function button(){
         // click event = An interaction when a user clicks on a Epecific element.
     //           we can respond to clicks by passing a callback to the onclick event handler.
 
-    const clickMe = () => { console.log("Oouch !");};
-    const stopClick = (name) => { console.log(` ${name} stopp clicking me ... !!!`); };
+
+     let counter = 0;
+     const clickMe = (e) => {
+      e.target.textContent ="Oouch !!!!" 
+      console.log(e);};
+
+    // const clickMe = () => { console.log("Oouch !");};
+    const stopClick = (name) => { 
+      if (counter < 3) {
+        counter ++
+        console.log(` ${name} U clicked me ${counter} time/s`);
+
+      } else{
+      
+      console.log(` ${name} stopp clicking me ... !!!`);} };
 
 
       
@@ -30,7 +43,7 @@ function button(){
     
     <>
    
-    <button style={styles} onClick={clickMe} >click Me</button>
+    <button style={styles} onClick={(e)=>clickMe(e)} >click Me</button>
     <button style={styles} onClick={()=>stopClick("bro")} >click Me pls</button>  
      </>
 
